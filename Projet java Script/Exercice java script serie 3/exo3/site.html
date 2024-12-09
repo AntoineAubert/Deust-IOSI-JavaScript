@@ -1,0 +1,19 @@
+<html>
+<head> </head>
+<body>
+<script type="text/javascript">
+        function somme(nb) {
+            var i = 1;
+            var resultat = 0;
+            while (i<=nb) {
+                var som = parseInt(window.prompt('Nombre n°'+i, ''));
+                resultat = resultat + som;
+                i++;
+            }
+            alert('Somme = '+resultat);
+        }
+        var nb = parseInt(window.prompt('Combien de nombre voulez-vous additionner ?', ''));
+        somme(nb);
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head> </head>
+<body>
+<script type="text/javascript">
+        function somme(n)
+        {
+                var i;
+                var somme = 0;
+                var valeurs = new Array();
+
+                for(i=0; i<n; i++)
+                {
+                        valeurs[i] = parseInt(window.prompt('Valeur ?', ''));
+                }
+                for(i=0; i<n; i++)
+                {
+                        somme = parseInt(somme) + valeurs[i];
+                }
+                document.write('Somme: ' + somme);
+        }
+        var nb = parseInt(window.prompt('Combien de nombre voulez-vous entrer ?', ''));
+        somme(nb);
+</script>
+</body>
+</html>

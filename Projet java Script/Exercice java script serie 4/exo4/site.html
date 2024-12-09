@@ -1,0 +1,19 @@
+
+<HTML>
+<HEAD>
+<SCRIPT LANGUAGE="javascript">
+function calculer(formulaire) {
+var somme =parseInt(document. formulaire.nombre1.value)+parseInt(document. formulaire.nombre2.value);
+document.formulaire.output.value=somme;
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME="formulaire">
+ nombre1 : <INPUT TYPE="text" NAME="nombre1" VALUE="0"><BR>
+nombre2   :<INPUT TYPE="text" NAME="nombre2" VALUE="0"> <BR>
+<INPUT TYPE="button" NAME="bouton" VALUE="Calculer" onClick="calculer(formulaire)"><BR>
+ somme : <INPUT TYPE="text" NAME="output" VALUE="">
+</FORM>
+</BODY>
+</HTML>

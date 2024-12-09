@@ -1,0 +1,34 @@
+<HTML>
+    <HEAD>
+    <TITLE>evenements</TITLE>
+    <script type="text/javascript">
+    function traduire(rang){
+    document.getElementById("fr").selectedIndex=rang;
+    document.getElementById("ang").selectedIndex=rang;
+    document.getElementById("esp").selectedIndex=rang;
+    }
+    </script>
+    </HEAD>
+    <BODY BGCOLOR="#ffffff">
+    
+    <FORM>
+    <h4>Traduction :</h4>
+            Français:<SELECT SIZE=1 NAME="francais" id ="fr" onchange="traduire(this.selectedIndex)">
+            <OPTION VALUE="1" >Rouge</OPTION>
+            <OPTION VALUE="2">Vert</OPTION>
+            <OPTION VALUE="3">Bleu</OPTION>
+            </SELECT>
+            Anglais:<SELECT SIZE=1 NAME="anglais" id ="ang" onchange="traduire(this.selectedIndex)">
+            <OPTION VALUE="1" >Red</OPTION>
+            <OPTION VALUE="2">Green</OPTION>
+            <OPTION VALUE="3">Blue</OPTION>
+            </SELECT>
+            Espagnol:<SELECT SIZE=1 NAME="Espagnol" id ="esp" onchange="traduire(this.selectedIndex)">
+            <OPTION VALUE="1" >Rojo</OPTION>
+            <OPTION VALUE="2">Verde</OPTION>
+            <OPTION VALUE="3">Azur</OPTION>
+            </SELECT>
+    <br><br>
+    </FORM>
+    </BODY>
+    </HTML>

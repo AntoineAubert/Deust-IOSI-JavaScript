@@ -1,0 +1,32 @@
+<html>
+<head> </head>
+<body>
+<script type="text/javascript">
+        function multi(nb)
+        {
+                var i = 0;
+                var resultat = 0;
+
+                document.write('<table align="center" border="1" width="100px"><tr align="center"><td width="35%">x</td><td><b>' + nb + '</b></td></tr>');
+                for(i=0; i<=10; i++)
+                {
+                        resultat = nb * i;
+                        document.write('<tr align="center"><td><b>' + i + '</b></td><td>' + resultat + '</td></tr>');
+                }
+                document.write('</table><br /><center><a href="exo6.html">Retour</a></center>');
+        }
+</script>
+<h1>Programme de multiplication</h1>
+<p>Choississez la table de multiplication que vous voulez afficher :</p>
+<input type="button" name="multi1" value="Table de 1" onclick="multi(1)">
+<input type="button" name="multi1" value="Table de 2" onclick="multi(2)">
+<input type="button" name="multi1" value="Table de 3" onclick="multi(3)">
+<input type="button" name="multi1" value="Table de 4" onclick="multi(4)">
+<input type="button" name="multi1" value="Table de 5" onclick="multi(5)">
+<input type="button" name="multi1" value="Table de 6" onclick="multi(6)">
+<input type="button" name="multi1" value="Table de 7" onclick="multi(7)">
+<input type="button" name="multi1" value="Table de 8" onclick="multi(8)">
+<input type="button" name="multi1" value="Table de 9" onclick="multi(9)">
+<input type="button" name="multi1" value="Table de 10" onclick="multi(10)">
+</body>
+</html>

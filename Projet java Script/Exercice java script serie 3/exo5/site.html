@@ -1,0 +1,27 @@
+<html>
+<head> </head>
+<body>
+<script type="text/javascript">
+        var valeurs = new Array();
+        var i;
+
+        var nb = parseInt(window.prompt('Combien de nombre voulez-vous entrer ?', ''));
+
+        for(i=0; i<nb; i++)
+        {
+                valeurs[i] = parseInt(window.prompt('Valeur ?', ''));
+        }
+
+        var min = valeurs[0];
+        var max = valeurs[0];
+        for(i=0; i<nb; i++)
+        {
+                if(valeurs[i+1] < valeurs[i])
+                        min = valeurs[i+1];
+                if(valeurs[i+1] > valeurs[i])
+                        max = valeurs[i+1];
+        }
+        document.write('Minmum: ' + min + ' | Maximum: ' + max);
+</script>
+</body>
+</html>
